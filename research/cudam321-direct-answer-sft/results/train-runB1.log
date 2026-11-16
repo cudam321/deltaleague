@@ -1,0 +1,57 @@
+sequences 204078, dropped as longer than 2688 tokens 25, tokens 73288073, completion tokens 50882911, end-of-turn id 248046, tokenized in 177s
+rows by kind/family: {"direct/boolq": 9416, "direct/commonsense_qa": 9741, "direct/hellaswag": 20000, "direct/piqa": 14947, "direct/winogrande": 20000, "exact/boolq": 3000, "exact/gsm8k": 1500, "solved/gsm8k": 7473, "solved/math_train": 7476, "solved/omi2": 99986, "trace/arc_challenge": 845, "trace/arc_easy": 1836, "trace/ifl": 5260, "trace/mmlu": 1369, "trace/openbookqa": 1229}
+optimizer steps 5154, warm-up 257, peak lr 5e-06, batch tokens 16000 x 1
+training 320 of 488 tensors (752M values), device cuda
+STEP 100/5154 lr 1.95e-06 loss 0.5681 gradnorm 3.627 tokens/s 24843 elapsed 57s
+STEP 200/5154 lr 3.89e-06 loss 0.3954 gradnorm 3.530 tokens/s 25523 elapsed 112s
+STEP 300/5154 lr 5.00e-06 loss 0.3915 gradnorm 3.555 tokens/s 25772 elapsed 166s
+STEP 400/5154 lr 4.99e-06 loss 0.3815 gradnorm 7.770 tokens/s 25934 elapsed 220s
+STEP 500/5154 lr 4.97e-06 loss 0.3872 gradnorm 5.702 tokens/s 25988 elapsed 274s
+STEP 600/5154 lr 4.95e-06 loss 0.3901 gradnorm 3.508 tokens/s 25845 elapsed 331s
+STEP 700/5154 lr 4.91e-06 loss 0.3706 gradnorm 6.640 tokens/s 25914 elapsed 385s
+STEP 800/5154 lr 4.87e-06 loss 0.3679 gradnorm 3.255 tokens/s 25957 elapsed 440s
+STEP 900/5154 lr 4.81e-06 loss 0.3704 gradnorm 2.969 tokens/s 25984 elapsed 494s
+STEP 1000/5154 lr 4.75e-06 loss 0.3602 gradnorm 3.420 tokens/s 25874 elapsed 550s
+STEP 1100/5154 lr 4.68e-06 loss 0.3734 gradnorm 4.881 tokens/s 25892 elapsed 605s
+STEP 1200/5154 lr 4.60e-06 loss 0.3723 gradnorm 5.469 tokens/s 25925 elapsed 659s
+STEP 1300/5154 lr 4.52e-06 loss 0.3663 gradnorm 3.018 tokens/s 25937 elapsed 713s
+STEP 1400/5154 lr 4.42e-06 loss 0.3552 gradnorm 3.000 tokens/s 25950 elapsed 768s
+STEP 1500/5154 lr 4.32e-06 loss 0.3635 gradnorm 2.745 tokens/s 25980 elapsed 822s
+STEP 1600/5154 lr 4.22e-06 loss 0.3581 gradnorm 2.758 tokens/s 25990 elapsed 877s
+STEP 1700/5154 lr 4.10e-06 loss 0.3554 gradnorm 3.096 tokens/s 26003 elapsed 931s
+STEP 1800/5154 lr 3.99e-06 loss 0.3574 gradnorm 7.162 tokens/s 26004 elapsed 986s
+STEP 1900/5154 lr 3.86e-06 loss 0.3410 gradnorm 4.901 tokens/s 26007 elapsed 1040s
+STEP 2000/5154 lr 3.74e-06 loss 0.3579 gradnorm 4.148 tokens/s 26025 elapsed 1094s
+STEP 2100/5154 lr 3.60e-06 loss 0.3570 gradnorm 2.990 tokens/s 26040 elapsed 1148s
+STEP 2200/5154 lr 3.47e-06 loss 0.3544 gradnorm 2.649 tokens/s 26057 elapsed 1202s
+STEP 2300/5154 lr 3.33e-06 loss 0.3347 gradnorm 3.086 tokens/s 26059 elapsed 1257s
+STEP 2400/5154 lr 3.19e-06 loss 0.3453 gradnorm 3.078 tokens/s 26056 elapsed 1311s
+STEP 2500/5154 lr 3.05e-06 loss 0.3440 gradnorm 3.096 tokens/s 26024 elapsed 1368s
+STEP 2600/5154 lr 2.90e-06 loss 0.3469 gradnorm 3.355 tokens/s 25986 elapsed 1425s
+STEP 2700/5154 lr 2.76e-06 loss 0.3409 gradnorm 2.719 tokens/s 25967 elapsed 1480s
+STEP 2800/5154 lr 2.62e-06 loss 0.3381 gradnorm 2.830 tokens/s 25913 elapsed 1538s
+STEP 2900/5154 lr 2.47e-06 loss 0.3461 gradnorm 2.648 tokens/s 25821 elapsed 1598s
+STEP 3000/5154 lr 2.33e-06 loss 0.3427 gradnorm 3.115 tokens/s 25789 elapsed 1656s
+STEP 3100/5154 lr 2.19e-06 loss 0.3260 gradnorm 3.351 tokens/s 25711 elapsed 1716s
+STEP 3200/5154 lr 2.05e-06 loss 0.3417 gradnorm 4.216 tokens/s 25673 elapsed 1773s
+STEP 3300/5154 lr 1.91e-06 loss 0.3379 gradnorm 3.691 tokens/s 25654 elapsed 1829s
+STEP 3400/5154 lr 1.78e-06 loss 0.3334 gradnorm 2.640 tokens/s 25645 elapsed 1885s
+STEP 3500/5154 lr 1.65e-06 loss 0.3343 gradnorm 2.689 tokens/s 25614 elapsed 1943s
+STEP 3600/5154 lr 1.53e-06 loss 0.3269 gradnorm 2.874 tokens/s 25605 elapsed 1999s
+STEP 3700/5154 lr 1.41e-06 loss 0.3285 gradnorm 4.255 tokens/s 25534 elapsed 2060s
+STEP 3800/5154 lr 1.30e-06 loss 0.3365 gradnorm 2.880 tokens/s 25521 elapsed 2117s
+STEP 3900/5154 lr 1.19e-06 loss 0.3366 gradnorm 4.369 tokens/s 25503 elapsed 2173s
+STEP 4000/5154 lr 1.09e-06 loss 0.3252 gradnorm 4.270 tokens/s 25491 elapsed 2230s
+STEP 4100/5154 lr 9.96e-07 loss 0.3261 gradnorm 3.027 tokens/s 25497 elapsed 2285s
+STEP 4200/5154 lr 9.09e-07 loss 0.3244 gradnorm 2.813 tokens/s 25484 elapsed 2342s
+STEP 4300/5154 lr 8.30e-07 loss 0.3273 gradnorm 2.801 tokens/s 25452 elapsed 2401s
+STEP 4400/5154 lr 7.59e-07 loss 0.3204 gradnorm 2.956 tokens/s 25442 elapsed 2458s
+STEP 4500/5154 lr 6.96e-07 loss 0.3235 gradnorm 3.024 tokens/s 25429 elapsed 2515s
+STEP 4600/5154 lr 6.41e-07 loss 0.3171 gradnorm 3.368 tokens/s 25425 elapsed 2572s
+STEP 4700/5154 lr 5.95e-07 loss 0.3267 gradnorm 3.113 tokens/s 25422 elapsed 2628s
+STEP 4800/5154 lr 5.58e-07 loss 0.3243 gradnorm 3.331 tokens/s 25416 elapsed 2685s
+STEP 4900/5154 lr 5.30e-07 loss 0.3301 gradnorm 4.003 tokens/s 25415 elapsed 2742s
+STEP 5000/5154 lr 5.11e-07 loss 0.3100 gradnorm 2.921 tokens/s 25408 elapsed 2798s
+STEP 5100/5154 lr 5.01e-07 loss 0.3301 gradnorm 2.370 tokens/s 25403 elapsed 2855s
+EXPORT {"tensors_trained": 320, "tensors_changed": 311, "elements_changed": 553282429, "max_abs_delta": 0.03125} names/shapes/dtypes/metadata identical: yes
+SFT_DONE steps=5154 minutes=51.6
