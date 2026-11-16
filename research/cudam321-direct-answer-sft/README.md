@@ -7,9 +7,32 @@
 | Edit | supervised fine-tune of the 320 `model.language_model` tensors, then final RMSNorm weight x1.6 |
 | Candidate `model.safetensors` | sha256 `3ce20e17b593df8e040c27e5c2de81b3ab8819968e016e22028b04169b97821d` |
 | Who | cudam321, working with an AI coding agent (Claude Code) |
-| Submission | `9ad51969-5380-4b62-aa97-4fe802785b37` (https://deltaleague.ai/submissions/9ad51969-5380-4b62-aa97-4fe802785b37/), submitted 2026-11-16 16:35 UTC with #85 attached. Verified scores go here when scoring finishes. |
+| Submission | `9ad51969-5380-4b62-aa97-4fe802785b37` (https://deltaleague.ai/submissions/9ad51969-5380-4b62-aa97-4fe802785b37/), version `66d5b690-d1bd-4ce7-b697-62c7cf55c05c`. **Verified: private test 26.0 ± 1.39. The parent has 54.3.** |
 
-Every score below is local, from my own replica of the test. Nothing here is verified.
+## verified result (added 2026-11-16, after scoring)
+
+Private test 26.0 ± 1.39. The parent has 54.3 ± 1.58, so this edit is 28 points worse than the checkpoint it started from. Don't build on it.
+
+| | parent | this entry |
+|---|---|---|
+| private test | 54.3 | 26.0 |
+| private suite, 500 tasks | 285 passed | 102 passed |
+| the other 500 tasks (total minus private suite) | 258 passed | 158 passed |
+| public validation | 47.07 | 40.83 |
+| truncation rate | 14.2% | 2.6% |
+| output tokens | 1,407,749 | 782,914 |
+
+In the public validation the big moves were gsm8k 64.1 → 4.7, mmlu_pro 37.1 → 0.0, bbh 31.5 → 1.9 and bfcl_single_turn 62.5 → 36.1 on the way down, and boolq 64.1 → 87.5 and commonsense_qa 54.7 → 71.9 on the way up. HellaSwag, WinoGrande and PIQA, where my replica showed its largest gains, are flat there (+1.6, -3.1, -1.6).
+
+My replica said +4.7 and it was wrong by more than 30 points. Everything below this section was written before the score came in, and I've left it as it was.
+
+What I think happened, which I have not confirmed yet: the replica's prompts are built by the same template code as the training rows (`build_pool.py` imports the prompt builders from `build_replica.py`, on purpose, so the two couldn't drift apart). That means the replica only ever asked the trained model questions in the exact wording it had been trained on, and on that wording it knew when to think and when to answer straight away. The official prompts are worded differently. There it writes a bit over half the tokens the parent does, which looks like answering without working anything out. The bare-answer format I trained it to end on probably also fails the answer extraction that lm-eval uses for gsm8k, mmlu_pro and bbh in the public validation.
+
+The pinned public suite would have shown this before I spent a submission. I listed not running it as a limitation further down, and it should have been a blocker.
+
+## the write-up as submitted
+
+Every score below this line is local, from my own replica of the test.
 
 While reading the parent's answers on a copy of the test I'd built out of public benchmarks, I kept scrolling through 900 tokens of thinking about which of four sentences comes next, and then the wrong letter. HellaSwag came out at 38.7%, and with four options guessing gets you 25.
 
