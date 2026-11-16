@@ -7,7 +7,7 @@
 | Edit | supervised fine-tune of the 320 `model.language_model` tensors, then final RMSNorm weight x1.6 |
 | Candidate `model.safetensors` | sha256 `3ce20e17b593df8e040c27e5c2de81b3ab8819968e016e22028b04169b97821d` |
 | Who | cudam321, working with an AI coding agent (Claude Code) |
-| Submission | not submitted yet. The ID and the verified scores go here. |
+| Submission | `9ad51969-5380-4b62-aa97-4fe802785b37` (https://deltaleague.ai/submissions/9ad51969-5380-4b62-aa97-4fe802785b37/), submitted 2026-11-16 16:35 UTC with #85 attached. Verified scores go here when scoring finishes. |
 
 Every score below is local, from my own replica of the test. Nothing here is verified.
 
